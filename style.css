@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Also center vertically if needed */
+    min-height: 100vh; /* Full height */
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    max-width: 1000px; /* Maximum width */
+    /* Remove auto margins if flexbox is used for centering */
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    border-radius: 10px; /* Slightly larger radius for a softer edge */
+
+/* Header Styling */
+header {
+    margin-bottom: 40px; /* Increased space below header */
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+}
+
+.profile-pic-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Section Styling */
+section {
+    background-color: #f9f9f9; /* Light background for the section */
+    margin: 20px auto; /* Margin top & bottom */
+    padding: 20px; /* Padding inside the section */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text alignment */
+    width: 90%; /* Section width */
+}
+
+section h2 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+section p, section a {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Links Styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer and Social Media Links */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    width: 80%; /* Adjusted width */
+    max-width: 1000px; /* Maximum width to match the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Consistent with container */
+    border-radius: 10px; /* Consistent with container */
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    margin: 20px auto; /* Centers the footer itself */
+}
+
+.social-media h2, .social-media p {
+    margin-bottom: 20px;
+}
+
+ul.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Reset margin for list */
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+}
+
+ul.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+ul.social-links li a {
+    color: white;
+    font-size: 24px;
+}
+
+ul.social-links li a:hover {
+    color: #007bff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container, footer {
+        width: 95%; /* Wider on small screens */
+    }
+
+    section {
+        width: 100%; /* Full width within container */
+    }
+}
